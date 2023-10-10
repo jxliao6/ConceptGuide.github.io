@@ -1,3 +1,10 @@
 body {
-  padding-top: 5rem;
+  padding-top: 0rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.p_styled::first-letter {
+  font-size: 1.2em;
+  font-weight: bold;
 }

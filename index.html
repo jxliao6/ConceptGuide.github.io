@@ -1,201 +1,305 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>ConceptGuide</title>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Concept series project</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core CSS -->
-    
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="assets/starter-template.css" rel="stylesheet">
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="assets/starter-template.css" rel="stylesheet">
+</head>
+
 <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navigation</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+  <nav class=" navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#intro">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#CC" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ConceptCombo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#CC_abstract">Abstract</a></li>
+              <li><a class="dropdown-item" href="#CC_demo">Demo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#CG" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ConceptGuide
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#CG_abstract">Abstract</a></li>
+              <li><a class="dropdown-item" href="#CG_demo">Demo and Presentation</a></li>
+              <li><a class="dropdown-item" href="#CG_code">Code</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#people">People</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="#CG_demo">Videos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Abstract">Abstract</a>
+          <a class="nav-link" href="#CG_code">Code</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#demo">Videos</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#code">Code</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#questionnaire">Questionnaire</a>
-        </li>
-        
-      </ul>
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+          <a class="nav-link" href="#CG_questionnaire">Questionnaire</a>
+        </li>  -->
+
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<main class="container">
-  <br>
 
-  <div class="starter-template text-center py-3 px-5">
-    <h1>ConceptGuide: Supporting Online Video Learning with ConceptMap-based Recommendation of Learning Path</h1>
-    <p class="lead">Authors: Chien-Lin Tang <sup>*</sup>, Jingxian Liao <sup>*</sup>, Hao-Chuan Wang, Ching-Ying Sung, Wen-Chieh Lin</p>
-    <p class="text-right"><sup>*</sup>These authors contributed equally to this work</p>
-    <p>Published in the Proceedings of the Web Conference 2021 (WWW '21), April 19--23, 2021, Ljubljana, Slovenia</p>
 
-  </div>
+  <main class="container">
+    <div class="starter-template text-center py-3 px-5" id="intro">
+      <h1>Conceptual Overview and Visualization of Video Resources Supporting Video-based Knowledge Exploration and Learning</h1>
 
-  <div class="starter-template  py-2 px-5" id="Abstract">
-    <h2>Abstract</h2>
-    <p>People increasingly use online video platforms, e.g., YouTube, to locate educational videos to acquire knowledge or skills to meet personal learning needs. However, most of existing video platforms display video search results in generic ranked lists based on relevance to queries. The design of relevance-oriented information display does not take into account the inner structure of the knowledge domain, and may not suit the need of online learners. In this paper, we present ConceptGuide, a prototype system for learning orientations to support ad hoc online learning from unorganized video materials. ConceptGuide features a computational pipeline that performs content analysis on the transcripts of YouTube videos retrieved for a topic, and generates concept-map-based visual recommendations of inter-concept and inter-video links, forming learning pathways as structures for learners to consume. We evaluated ConceptGuide by comparing the design to the general-purpose interface of YouTube in learning experiences and behaviors. ConceptuGuide was found to improve the efficiency of video learning and helped learners explore the knowledge of interest in many constructive ways.</p>
-  </div>
+    </div>
 
-  <div class="starter-template  py-2 px-5" id="demo">
-    <h2>Demo</h2>
-    <p style="text-align:center">
-      
-      <video width="800" height="450" controls >
-      <source src="conceptguide_demo.mp4" type="video/mp4">
-    </video>
-    <br><br>
-    Demo video of ConceptGuide 
-  </p>
-  </div>
+    <div class="starter-template  py-2 px-5" id="intro_overview">
+      <h2>Overview</h2>
+      <p class="p_styled">In today's digital landscape, a wealth of video resources allows individuals to explore topics of interest. 
+        However, finding quality videos that are well-organized and easy to follow is key to start the exploration, followed by 
+        understanding and organizing the information gleaned from different sources, including both the videos and accompanying reactions. 
+        According to active learning theory, it's crucial for users to invest cognitive and intellectual effort in this process, 
+        a task that becomes increasingly challenging as the amount of available information grows. 
+        Presently, most automatic recommender systems do not provide adequate learning and autonomous opportunities for users to explore, 
+        nor do they consider the semantic structure of the knowledge domain when displaying results. 
+        This project aims to bridge this gap by exploring different conceptual overviews, visualizations, and interactions within video navigation systems. 
+        By doing so, we seek to understand how users might better balance automated support with active learning. 
+        The project comprises two main initiatives: ConceptGuide and ConceptCombo. 
+        ConceptGuide is a prototype system that generates concept-map-based visual recommendations, offering links between concepts and videos to provide diverse learning pathways. 
+        On the other hand, ConceptCombo captures the conceptual structures and themes present in social comments and videos, supporting a more cohesive exploration of the topic domain. 
+        Through these efforts, we aim to enhance the user experience in navigating video resources and empower users in online knowledge exploration.
+      </p>
+    </div>
 
-  <div class="starter-template  py-2 px-5" >
-    <h2>Presentation video</h2>
-    <p> Presentation video in WWW2021 conference by Jingxian Liao <a href="https://drive.google.com/file/d/1o5a0ZPYRrVANg63Z9MqFa94jpoDyZFWF/view?usp=sharing">video link</a>. </p>
-  </div>
+    <hr>
 
-  <div class="starter-template  py-2 px-5" id="code">
-  	<h2>ConceptGuide system</h2>
-  	<p>The ConceptGuide is opensourced in the following repo: <a href="https://github.com/jxliao6/ConceptGuide_code">ConceptGuide_code</a>. </p>
-  </div>
+    <div class="starter-template py-3 px-5" id="CC">
+      <h2>ConceptCombo: Assisting Online Video Access with Concept Mapping and Social Commenting Visualizations</h2>
+      <p >Demo published in the Computer Supported Cooperative Work and Social Computing, October 14--18, 2023, Minneapolis, MN, USA</p>
 
-  <div class="starter-template  py-2 px-5" id="questionnaire">
-  	<h2>
-  		Experiment questionnaire
-  	</h2>
-  	<p>Here are some example questions in our experiment questionnaire which covers 7 aspects of learning experiences. The questionnaire   consists of a set of 7-point Likert scales. And the full questionnaire is <a href="https://docs.google.com/document/d/1Kuuqh8UFC1IuUMyB28glqV-VAWGXqCJLKfuC-xuxn7U/edit?usp=sharing">here</a>. </p>
-  	<ol>
-  		<li>
-  			Learning Concentration
-  			<ul>
-  				<li>	My mind wanders during the learning task. </li>
-  			</ul>
-  		</li>
-  		<li>
-  			Usability of System
-  			<ul>
-  				<li>	It is easy to capture the information given by the learning system / YouTube. </li>
-  			</ul>
-  		</li>
-  		<li>
-  			Learning Motivation
-  			<ul>
-  				<li>	I like the learning system / YouTube in this learning trial. </li>
-  			</ul>
-  		</li>
-  		<li>
-  			Scope of Videos
-  			<ul>
-  				<li>	The learning system / YouTube could help me learn the contents from a new perspective. </li>
-  			</ul>
-  		</li>
-  		<li>
-  			Quality of Videos Watched
-  			<ul>
-  				<li>	I am satisfied with the videos I found by using the learning system / YouTube.</li>
-  			</ul>
-  		</li>
-  		<li>
-  			Learning Guidance
-  			<ul>
-  				<li>	I usually have no idea what I should search or learn during the task.</li>
-  			</ul>
-  		</li>
-  		<li>
-  			Perceived Learning Performance
-  			<ul>
-  				<li>	I learned core concepts of the topic and their connections after the learning task.</li>
-  			</ul>
-  		</li>
-  	</ol>
-  </div>
+    </div>
 
-  <div class="starter-template  py-2 px-5">
-    <h2>Acknowledgments</h2>
-    <p> This work was supported in part by the Ministry of Science and Technology of Taiwan under grant No. 109-2221-E-009-123-MY3 and 109-2221-E-009-119-MY3, and by UC Davis through Hao-Chuan Wang's startup grant. We thank Yun-Rou Lin for making the demo video.
-</p>
-  </div>
+    <div class="starter-template  py-2 px-5" id="CC_abstract">
+      <h3>Abstract</h3>
+      <p>As access to educational video resources has been enhanced through search tools, recommender systems, and social channeling, 
+        users often encounter challenges in integrating diverse videos systematically, particularly when they possess a limited understanding 
+        of the topics at hand (e.g., novice learners). To address this challenge, we present ConceptCombo, a video navigating interface 
+        facilitating user explorations of unstructured video collections with conceptual structures and themes of social comments extracted 
+        from videos and visualized by the system. To help novices identify a series of quality videos to watch, ConceptCombo aims to deliver 
+        a structured overview of the video collection by systematically extracting a concept map from the video content, coupled with 
+        automatic summarization of user comments across the videos, as a treemap visualization. With ConceptCombo, novice users may 
+        adopt a synergistic approach to video exploration, underpinned by the semantic structure of the video content, social comments, 
+        and additional video metadata.</p>
+    </div>
 
-  <div class="starter-template  py-2 px-5">
+    <div class="starter-template  py-2 px-5" id="CC_demo">
+      <h3>Demo</h3>
+      <p style="text-align:center">
 
-    <h2>Citation</h2>
-    <p> <code>@inproceedings{tang2021conceptguide,
+        <video width="800" height="450" controls>
+          <source src="conceptcombo_demo.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        Demo video of ConceptCombo
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="starter-template py-3 px-5" id="CG">
+      <h2>ConceptGuide: Supporting Online Video Learning with ConceptMap-based Recommendation of Learning Path</h2>
+      <p>Published in the Proceedings of the Web Conference 2021 (WWW '21), April 19--23, 2021, Ljubljana, Slovenia</p>
+
+    </div>
+
+    <div class="starter-template  py-2 px-5" id="CG_abstract">
+      <h3>Abstract</h3>
+      <p>People increasingly use online video platforms, e.g., YouTube, to locate educational videos to acquire
+        knowledge or skills to meet personal learning needs. However, most of existing video platforms display video
+        search results in generic ranked lists based on relevance to queries. The design of relevance-oriented
+        information display does not take into account the inner structure of the knowledge domain, and may not suit the
+        need of online learners. In this paper, we present ConceptGuide, a prototype system for learning orientations to
+        support ad hoc online learning from unorganized video materials. ConceptGuide features a computational pipeline
+        that performs content analysis on the transcripts of YouTube videos retrieved for a topic, and generates
+        concept-map-based visual recommendations of inter-concept and inter-video links, forming learning pathways as
+        structures for learners to consume. We evaluated ConceptGuide by comparing the design to the general-purpose
+        interface of YouTube in learning experiences and behaviors. ConceptuGuide was found to improve the efficiency of
+        video learning and helped learners explore the knowledge of interest in many constructive ways.</p>
+    </div>
+
+    <div class="starter-template  py-2 px-5" id="CG_demo">
+      <h3>Demo</h3>
+      <p style="text-align:center">
+
+        <video width="800" height="450" controls>
+          <source src="conceptguide_demo.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        Demo video of ConceptGuide
+      </p>
+    </div>
+
+    <div class="starter-template  py-2 px-5">
+      <h3>Paper and Presentation</h3>
+      <p> <a href="https://dl.acm.org/doi/10.1145/3442381.3449808">ACM DL paper link</a></p>
+      <p> Presentation video in WWW2021 conference by Jingxian Liao <a
+          href="https://drive.google.com/file/d/1o5a0ZPYRrVANg63Z9MqFa94jpoDyZFWF/view?usp=sharing">video link</a>. </p>
+    </div>
+
+    <div class="starter-template  py-2 px-5" id="CG_code">
+      <h3>ConceptGuide system</h3>
+      <p>The ConceptGuide is opensourced in the following repo: <a
+          href="https://github.com/jxliao6/ConceptGuide_code">ConceptGuide_code</a>. </p>
+    </div>
+
+    <div class="starter-template  py-2 px-5" id="CG_questionnaire">
+      <h3>
+        Experiment questionnaire
+      </h3>
+      <p>Here are some example questions in our experiment questionnaire which covers 7 aspects of learning experiences.
+        The questionnaire consists of a set of 7-point Likert scales. And the full questionnaire is <a
+          href="https://docs.google.com/document/d/1Kuuqh8UFC1IuUMyB28glqV-VAWGXqCJLKfuC-xuxn7U/edit?usp=sharing">here</a>.
+      </p>
+      <ol>
+        <li>
+          Learning Concentration
+          <ul>
+            <li> My mind wanders during the learning task. </li>
+          </ul>
+        </li>
+        <li>
+          Usability of System
+          <ul>
+            <li> It is easy to capture the information given by the learning system / YouTube. </li>
+          </ul>
+        </li>
+        <li>
+          Learning Motivation
+          <ul>
+            <li> I like the learning system / YouTube in this learning trial. </li>
+          </ul>
+        </li>
+        <li>
+          Scope of Videos
+          <ul>
+            <li> The learning system / YouTube could help me learn the contents from a new perspective. </li>
+          </ul>
+        </li>
+        <li>
+          Quality of Videos Watched
+          <ul>
+            <li> I am satisfied with the videos I found by using the learning system / YouTube.</li>
+          </ul>
+        </li>
+        <li>
+          Learning Guidance
+          <ul>
+            <li> I usually have no idea what I should search or learn during the task.</li>
+          </ul>
+        </li>
+        <li>
+          Perceived Learning Performance
+          <ul>
+            <li> I learned core concepts of the topic and their connections after the learning task.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div class="starter-template  py-2 px-5">
+      <h3>Acknowledgments</h3>
+      <p> This work was supported in part by the Ministry of Science and Technology of Taiwan under grant No.
+        109-2221-E-009-123-MY3 and 109-2221-E-009-119-MY3, and by UC Davis through Hao-Chuan Wang's startup grant. We
+        thank Yun-Rou Lin for making the demo video.
+      </p>
+    </div>
+
+    <div class="starter-template  py-2 px-4">
+
+    <hr>
+
+      <!-- <h3>Citation</h3>
+      <p> <code>@inproceedings{tang2021conceptguide,
    author={AChien-Lin Tang, Jingxian Liao, Hao-Chuan Wang, Ching-Ying Sung, Wen-Chieh Lin},
    year={2021},
    title={ConceptGuide: Supporting Online Video Learning with ConceptMap-based Recommendation of Learning Path},
    booktitle={Proceedings of the Web Conference 2021}
-}</code></p>
+}</code></p> -->
 
-    <h2>Contact</h2>
-    <p> Jingxian Liao - jxliao@ucdavis.edu</p>
-  </div>
+      <div id="people">
+        <h3>People</h3>
+        <p> <strong><a href="https://jxliao6.github.io/">Jingxian Liao</a></strong>: PhD student at the University of California, Davis, with a focus on Computer-Supported Cooperative Work & Social Computing and Human-AI Collaboration. </p>
+        <p> <strong><a href="http://www.haochuanwang.info/">Hao-Chuan Wang</a></strong>: Associate Professor in the Department of Computer Science, University of California, Davis. His broad research area is Human-Computer Interaction (HCI), with a focus on issues of collaboration and social interaction, such as computer-mediated communication, human-AI interaction, technology-mediated knowledge sharing, hybrid and online work and wellbeing support. </p>
+        <p> <strong><a href="https://gpl.cs.nctu.edu.tw/Steve-Lin/">Wen-Chieh Lin</a></strong>: Professor in the Department of Computer Science, National Chiao-Tung University. His research interests span several areas of  computer graphics,  human-computer  interaction,  visualization,  and  computer  vision. </p>
+        <p class="p_styled"> Other collaborators and contributors: Chien-Lin Tang, Ching-Ying Sung, Yi-Ting Hung, Mrinalini Singh </p>
 
-
-  
-
-
-
-</main><!-- /.container -->
+      </div>
 
 
-    
 
-      
-  </body>
+      <h3>Contact</h3>
+      <p> Jingxian Liao - jxliao@ucdavis.edu</p>
+    </div>
+
+
+
+
+
+
+  </main><!-- /.container -->
+
+
+
+
+
+</body>
+
 </html>
-
